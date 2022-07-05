@@ -6,7 +6,7 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     address: 'smtp.mandrillapp.com',
-    authentication: :plain
+    authentication: :plain,
     domain: 'localhost',
     enable_starttls_auto: true,
     password: 'mandrill_api_key',
