@@ -24,7 +24,11 @@ class CombineItemsInCart < ActiveRecord::Migration[5.0]
       # add individual items
       line_item.quantity.times do
         LineItem.create(
-        cart_id: line_item.cart_id,
-        product_id: line_item.product_id,     
+          cart_id: line_item.cart_id,
+          product_id: line_item.product_id,
+          qualtity: 1
+        )
+      end
+    end
   end
 end
